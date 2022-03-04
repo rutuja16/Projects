@@ -1,0 +1,480 @@
+body{
+    background-color: #3D087B;
+    overflow-y: scroll;
+}
+.box-container{
+    margin:0px;
+    display:flex;
+
+    width:90%;
+    padding:0% 3%;
+    margin: 0% 3%;
+}
+.box1, .box2{
+    width:50%;
+    margin:0% 1%;
+}
+
+.clock{
+    background-image: url('./asset/clock_logo.png');
+    background-repeat: no-repeat;
+    width:220px;
+    height:80px;
+    margin: 5% 0% 2% 0% ;
+}
+.timetable{
+    width:88%;
+    /* height:40vh; */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1% 4%;
+    margin: 1% ;
+}
+.block{
+    margin:1%;
+    width:90%;
+    /* padding:  0%; */
+    display:flex;
+}
+.logo{
+    opacity:1;
+    width:40px;
+    height:40px;
+}
+.l1{
+    background: transparent url('asset/wake_up.svg') 0% 0% no-repeat padding-box;
+}
+.l2{
+    background: transparent url('asset/lunch_time.svg') 0% 0% no-repeat padding-box;
+}
+.l3{
+    background: transparent url('asset/nap_time.svg') 0% 0% no-repeat padding-box;
+}
+.l4{
+    background: transparent url('asset/nap_time.svg') 0% 0% no-repeat padding-box;
+}
+.set-time{
+    width:40%;
+    color: var(--unnamed-color-3d087b);
+    text-align: center;
+    font: normal normal normal 18px/28px Manrope;
+    letter-spacing: 0px;
+    color: #3D087B;
+    opacity: 1;
+    padding: 1% 7%;
+}
+form{
+    width:50%;
+    margin:1% 0%;
+}
+select{
+    width:100%;
+    height:5vh;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    color: #3D087B;
+}
+option{
+    color: #3D087B;
+    opacity: 1;
+    padding: 5%;
+}
+option:hover{
+    background-color: rgb(103, 188, 222);
+}
+.greeting{
+    width:93%;
+    padding: 4% 2%;
+    margin-top: 2% ;
+    text-align: left;
+    font: normal normal 900 25px/34px Bauhaus Hv BT;
+    background-color:#6a419a ;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+}
+.blk{
+    width:90%;
+    margin: 2%;
+    display:flex;
+}
+.VL{
+    height:4vh;
+    width:90%;
+    margin: 0% 4%;
+    border-left: 2px solid gray;
+}
+.set{
+    width:45%;
+    height:10%;
+    padding: 0% 1%;
+    margin: 1% ;
+}
+.time{
+    width:45%;
+    /* height:20vh; */
+    padding:1%;
+    color:white;
+}
+/* .time p{
+    color:white;
+} */
+button{
+    width:100%;
+    height: 8vh; 
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+button:hover{
+    content: none;
+    background: transparent linear-gradient(280deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+}
+button:hover span {
+    display: none
+}
+  
+button:hover:before {
+    content: "Party time!"
+}
+
+.time{
+    background-color:#6a419a ;
+    width:45%;
+    padding:0% 3%;
+    margin:  1% ;
+    border-radius: 10px;
+    opacity: 1;
+    color: #F25CFE;
+}
+
+.timeboxes{
+    height:25vh;
+    margin-bottom:2%;
+}
+.tb1{
+    position: relative;
+    top: 60px;
+    left:10%;
+    height:100px;
+    width:75%;
+    background-color:#6a419a ;
+    border-radius:10px ;
+    z-index: 1;
+}
+.tb2{
+    position: relative;
+    top: -50px;
+    left:5%;
+    height:100px;
+    width:85%;
+    background-color:#d3c7e1 ;
+    border-radius:10px ;
+    z-index: 2;
+}
+.tb3{
+    position: relative;
+    top: -160px;
+    height: 100px;
+    width:95%;
+    background-color:#FFFFFF ;
+    border-radius:10px ;
+    z-index: 3;
+}
+.row{
+    width:85%;
+    height:12vh;
+    margin:1% 5%;
+    display:inline-flex;
+    flex-flow:row nowrap;
+}
+.r{
+    height:40px;
+    padding:3%;
+    border-radius: 3px;
+}
+.r1{
+    text-align: left;
+    font: normal normal 600 20px/32px Manrope;
+    letter-spacing: 0px;
+    color: #3D087B;
+    text-transform: uppercase;
+    opacity: 1;
+    margin:3% 2% 3% 1%;
+    font-size: 24px;
+}
+.r2 , .r3 , .r4{
+    background-color: #f6e2ff;
+    margin:3% 1%;
+    text-align: center;
+    font: normal normal normal 20px/23px Barlow;
+    letter-spacing: 0px;
+    color: #8A11BF;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+.r5{
+    text-align: left;
+    background: transparent url('asset/AM_svg.svg') 0% 0% no-repeat padding-box;
+    font: normal normal normal 24px/35px Barlow;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    background-color: #f6e2ff;
+    margin:3% 0% 3% 4%;
+}
+.colan{
+    height:40px;
+    padding:7% 2%;
+    color: #8A11BF;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.health{
+    /* height:15vh; */
+    width:88%;
+    background-color: white;
+    color:#8E53F0;
+    border-radius: 10px;
+    text-align: center;
+    padding:4% ;
+    font: normal normal 900 25px/40px Bauhaus Hv BT;
+    letter-spacing: 0px;
+    color: #8E53F0;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#image{
+    margin-top:25px;
+    height:60vh;
+    width:95%;
+    border-radius: 10px;
+    /* background: transparent url('asset/Component\ 30\ –\ 1.svg') 0% 0% no-repeat padding-box; */
+    background-image: url('asset/wakeup.svg');
+    opacity:1;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media (max-width:856px) {
+    .clock{
+        margin: 1% 0%;
+    }
+    .box-container{
+        width:90%;
+        display: flex;
+        flex-flow:column wrap;
+    }
+    .box1,.box2{
+        width:100%;
+    }
+    .timetable{
+        margin-top: 27%;
+    }
+    .timetable,.greeting{
+        width:90%;
+    }
+    .greeting{
+        text-align: center;
+    }
+    .blk{
+        display: flex;
+        flex-flow: column wrap;
+        margin:2% 0%;
+        width:100%;
+    }
+    .set,.time{
+        /* width:44%; */
+        width:90%;
+    }
+    
+    .timeboxes{
+        width:90%;
+        height:28vh;
+        margin:6% 0% 8% 0%;
+        position: absolute;
+        top:0px;
+        left:10;
+    }
+    .tb1{
+        position: relative;
+        top: 80px;
+        left:10%;
+        height:110px;
+        width:75%;
+        background-color:#6a419a ;
+        border-radius:10px ;
+        z-index: 1;
+    }
+    .tb2{
+        position: relative;
+        top: -40px;
+        left:5%;
+        height:110px;
+        width:85%;
+        background-color:#d3c7e1 ;
+        border-radius:10px ;
+        z-index: 2;
+    }
+    .tb3{
+        position: relative;
+        top: -160px;
+        height: 110px;
+        width:95%;
+        background-color:#FFFFFF ;
+        border-radius:10px ;
+        z-index: 3;
+    }
+    .row{
+        width:90%;
+        height:14vh;
+        margin:1% 5%;
+        display:inline-flex;
+    }
+    .r{
+        height:40px;
+        padding:4% 2%;
+        border-radius: 3px;
+    }
+    .r1{
+        margin-top:2%;
+    }
+    .r2 , .r3 , .r4{
+        margin:2% 1%;
+    }
+    .r5{
+        margin:2% 0% 3% 4%;
+    }
+    .colan{
+        height:40px;
+        padding:5% 2%;
+        color: #8A11BF;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .health{
+        width:87%;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .clock{
+        margin: 2% 0%;
+    }
+    .box-container{
+        width:90%;
+        display: flex;
+        flex-flow:column wrap;
+    }
+    .box1,.box2{
+        width:100%;
+    }
+    .timetable{
+        margin-top: 47%;
+    }
+    .block{
+        width:100%;
+    }
+    .timetable,.greeting{
+        width:90%;
+    }
+    .greeting{
+        text-align: center;
+        margin: 3% 1%;
+    }
+    .set,.time{
+        width:44%;
+    }
+    .timeboxes{
+        width:90%;
+        height:28vh;
+        margin:12% 0%;
+        position: absolute;
+        top:0px;
+        left:10;
+    }
+    .tb1{
+        position: relative;
+        top: 80px;
+        left:10%;
+        height:110px;
+        width:75%;
+        background-color:#6a419a ;
+        border-radius:10px ;
+        z-index: 1;
+    }
+    .tb2{
+        position: relative;
+        top: -40px;
+        left:5%;
+        height:110px;
+        width:85%;
+        background-color:#d3c7e1 ;
+        border-radius:10px ;
+        z-index: 2;
+    }
+    .tb3{
+        position: relative;
+        top: -160px;
+        height: 110px;
+        width:95%;
+        background-color:#FFFFFF ;
+        border-radius:10px ;
+        z-index: 3;
+    }
+    .row{
+        width:90%;
+        height:14vh;
+        margin:3% 1%;
+        display:inline-flex;
+    }
+    .blk{
+        display: flex;
+        flex-flow: column wrap;
+        width:90%;
+    }
+    .set ,.time{
+        width:95%;
+        margin:2% 1%;
+    }
+    .r{
+        height:40px;
+        padding:4% 1%;
+        border-radius: 3px;
+    }
+    .r1{
+        margin-top:2%;
+    }
+    .r2 , .r3 , .r4{
+        margin:3% 1% 2% 0%;
+    }
+    .r5{
+        margin:3% 0% 3% 4%;
+    }
+    .colan{
+        height:40px;
+        padding:10% 2%;
+        color: #8A11BF;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .health{
+        width:87%;
+    }
+    .image{
+        width:95%;
+    }
+}
+
+

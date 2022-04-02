@@ -1,0 +1,262 @@
+*{
+    margin: 0%;
+    padding:0%;
+    
+}
+body{
+    width:80%;
+    height:100vh;
+    overflow-y: scroll;
+    background-image:linear-gradient(40deg,rgb(92, 215, 223),rgb(86, 108, 198),rgb(139, 54, 192),blue,rgb(92, 215, 223));
+}
+
+.container{
+    width:100%;
+    padding:5% 10% ;
+    /* position: relative;
+    top:0; */
+}
+.header{
+    display:flex;
+    width:80%;
+    justify-content: space-between;
+}
+.header label{
+    color:white;
+    font-size: 45px;
+    font-weight: 10;
+    float:left;
+}
+
+.header label span{
+    font-weight: bold;
+}
+
+.list_text{
+    float: right;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+.listBtn{
+    color: tomato;
+    padding-top:5%;
+    cursor: pointer;
+}
+.material-icons:hover {
+    transform: scale(1.5);
+    
+}
+.head{
+    font-size:20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.itembox{
+    background-color: inherit;
+    padding:2%;
+    color:orangered;
+    
+}
+
+
+hr{
+    width: 100%;
+    margin-right:0px;
+}
+
+.model {
+    display: none;
+}
+.model{
+    position: absolute;
+    top:32%;
+    left:34%;
+    font-weight:lighter;
+    padding:2% 1%;
+    border:1px solid rgb(255, 69, 0);
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    width:25%;
+    display: none;
+    transition: transform .2s; 
+
+}
+
+.model:hover {
+    transform: scale(1.1);
+}
+
+/* .model_ItemActive,
+.model_AnotherItemActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+    width: 35vw;
+    height: 35vh;
+    z-index: 1;
+    position:absolute;
+    top: 30vh;
+    left: 35vw;
+    background-color:white;
+    box-sizing: border-box;
+    padding: 1%;
+    color: tomato;
+    font-weight:lighter;
+    transition: transform .2s;
+} */
+
+input{
+    width:90%;
+    padding: 2%;
+    border:1px solid orangered;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+}
+label{
+    color:orangered;
+    font-size: 30px;
+    margin:0%;
+}
+
+.btn{
+    width:30%;
+    padding:2%;
+    background-color: rgb(255, 69, 0);
+    color:white;
+    font-size: 20px;
+    border-radius: 20px ;
+}
+
+/* .taskbody{
+    background-color: aqua;
+    width:80vw;
+    height:20vh;
+} */
+
+.parent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.child{
+    width:15vw;
+    height:40vh;
+    border:1px solid tomato;
+    border-radius: 10px;
+    background-color: white;
+    /* color:orangered; */
+    margin:2% 1%;
+    transition: transform .2s;
+}
+.child:hover {
+    transform: scale(1.1);
+}
+.task_title{
+    margin: 0%;
+    text-align: center;
+    padding: 1%;
+}
+.place{
+    display:inline-flex;
+    position:relative;
+    top:200px;
+    margin-left: 65%;
+}
+.place .add-item{
+    font-size: 20px;
+    background-color: dodgerblue;
+    
+}
+.place .removeTask{
+    color:orangered;
+} 
+
+.items{
+    padding: 1%;
+    font-size:20px;
+    text-align: center;
+    color:orangered;
+}
+.pendingIcon {
+    font-size: 20px;
+    margin:1% 3% 1% 2%;
+}
+.subItem {
+    /* width:100%; */
+    display: flex;
+    align-items: center;
+    /* flex-flow: row wrap; */
+}
+.scratch {
+    font-size: larger;
+    margin: 0;
+    /* color:black; */
+}
+.cut{
+    color: red;
+    text-decoration-line: line-through;
+}
+.donebtn{
+    background-color: dodgerblue;
+    color: white;
+    font-size:14px;
+    border-radius: 10px;
+    padding: 1%;
+    margin:0% 1%;
+}
+
+/* .backBtn{
+    float:left;
+    width:40%;
+}
+.addText{
+    float:right;
+    width:30%;
+} */
+
+.task{
+    background-color: #fff;
+    width: 18vw;
+    height: 50vh;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px gray;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    transition: transform .2s;
+    
+}
+
+.task:hover {
+    transform: scale(1.1);
+}
+
+.inactive {
+    display: none;
+}
+
+.container2{
+    display:none;
+    background-color: inherit;
+}
+.active {
+    width: 90%;
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: white;
+    color:orangered */
+}
+
+
+
+

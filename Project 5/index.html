@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Project-5 TODO JS</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+     <div class="container" id="'container">
+        <div class="header" id="header">
+            <label><span>Tasks </span> List</label>
+            <a class="list_text"  ><span class="material-icons newList listBtn" id="listBtn" >add_circle</span><span class="addListText">Add List</span></a>
+        </div>
+        <div class="container2" id="container2">
+            <p class="backBtn" id="backBtn">
+                <span class="material-icons">arrow_back_ios</span>
+            </p>
+            <p class="addText">
+                <span class="material-icons newList listBtn page2AddBtn" id="page2AddBtn">
+                    add_circle
+                </span>
+            </p>
+        </div>
+
+        <div class="itembox" id="itembox">
+            <h3 id="hide">No items in the todo list</h3>
+            <div class="parent" id="parent"></div>
+        </div>
+
+        
+    </div> 
+    <div class="model model_List" id="model_List" >
+        <label>Add New List</label><br><br>
+        <input type="text" id="task_name" placeholder="Add New Task"><br><br>
+        <button type="submit" id="add_list" class="btn addlist">Add</button>
+        <button type="close"  id="close_list" class="btn close-button" >Close</button>
+    </div>
+
+    <div class="model model_Item" id="model_Item" >
+        <label>Add New Item</label><br><br>
+        <input type="text" id="item_name" placeholder="Add New Item"><br><br>
+        <button type="submit" id="add_item"  class="btn addSubItem">Add</button>
+    </div>
+
+    <div class="model" id="model_AnotherItem" >
+        <label>Add New Item</label><br><br>
+        <input type="text" id="anotherItem_name" placeholder="Add Another Item"><br><br>
+        <button type="submit" id="addAnotherItem"  class="btn addSubItem">Add</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
